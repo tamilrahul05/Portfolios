@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* container */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-image: linear-gradient(135deg,
+            rgba(255, 0, 0, 0.248) 25%,
+            rgba(0, 0, 255, 0.197) 25% 50%,
+            rgba(0, 128, 0, 0.296) 50% 75%,
+            rgba(255, 166, 0, 0.33) 75%);
+}
+/* card common */
+.card {
+    height: 430px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* shapes div common */
+.shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* left shape common */
+.left_shape {
+    height: 140px;
+    width: 170px;
+    position: absolute;
+    left: -45px;
+    transform: rotate(-44deg);
+    top: -61px;
+    z-index: 1;
+}
+/* left shape text */
+.left_shape h2 {
+    transform: rotate(44deg);
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 75px;
+    left: 35px;
+}
+/* right shape common */
+.right_shape {
+    height: 140px;
+    width: 240px;
+    position: absolute;
+    right: -32px;
+    top: -40px;
+    transform: rotate(20deg);
+}
+/* right shape text */
+.right_shape h2 {
+    transform: rotate(-20deg);
+    position: absolute;
+    font-size: 26px;
+    color: white;
+    top: 75px;
+    right: 45px;
+}
+/* center content common */
+.content {
+    text-align: center;
+    position: relative;
+    top: 115px;
+}
+/* cneter content heading */
+.content h3 {
+    margin: 25px 0px;
+}
+/* button div */
+.btn {
+    position: relative;
+}
+/* button common */
+.btn button {
+    border: none;
+    background-color: transparent;
+    padding: 10px 80px;
+    font-size: 17px;
+    border-radius: 20px;
+    position: absolute;
+    top: 115px;
+    left: 35px;
+}
+/* left shape 1 */
+.card1 .left_shape {
+    background-color:blueviolet;
+}
+/* right shape 1 */
+.card1 .right_shape {
+    background-color: rgb(170, 80, 255);
+}
+/* 1st button */
+.card1 button {
+    border: 2px solid blue;
+    color: blue;
+}
+/* left shape 2 */
+.card2 .left_shape {
+    background-color: seagreen;
+}
+/* right shape 2 */
+.card2 .right_shape {
+    background-color: rgb(92, 255, 162);
+}
+/* 2nd button */
+.card2 button {
+    border: 2px solid teal;
+     background: linear-gradient(150deg,
+                seagreen 0%,
+                seagreen 30%,
+                white 30%,
+                white 70%,
+                seagreen 70%,
+                seagreen 100%);
+    color: teal;
+}
+/* left shape 3 */
+.card3 .left_shape {
+    background-color: orangered;
+}
+/* right shape 3 */
+.card3 .right_shape {
+    background-color: rgb(251, 122, 75);
+}
+/* 3rd button */
+.card3 button {
+    border: 2px solid coral;
+    color: coral;
+}
+/* left shape 4 */
+.card4 .left_shape {
+    background-color: deeppink;
+}
+/* right shape 4 */
+.card4 .right_shape {
+    background-color:rgb(251, 79, 171);
+}
+/* 4th button */
+.card4 button {
+    border: 2px solid magenta;
+    color: magenta;
+}

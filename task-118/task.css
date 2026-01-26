@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body style  */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+/* main div style  */
+main {
+    height: 370px;
+    overflow: hidden;
+    width: 550px;
+    background-color: green;
+    position: relative;
+    box-shadow: 0 0 10px;
+    border-radius: 15px;
+    transition: all 1s;
+}
+
+.container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+    height: 370px;
+    width: 550px;
+    padding: 30px;
+    background-color: seagreen;
+    border-radius: 13px;
+    box-shadow: 0 0 8px white;
+    position: relative;
+}
+
+main:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}
+
+.container img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+main:hover form {
+
+    bottom: 20px;
+    box-shadow: 0 0 10px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    height: 230px;
+    width: 550px;
+    padding: 30px;
+    background-color: white;
+    position: absolute;
+    bottom: -255px;
+    transition: all 1s;
+
+}
+
+
+form button {
+    padding: 5px;
+    width: 85px;
+    background-color: seagreen;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: lawngreen;
+}
+
+input {
+    padding: 5px;
+    width: 50%;
+}
+
+/* Responsive Design */
+
+/* Tablet Optimization (768px and below) */
+@media screen and (max-width: 768px) {
+    main {
+        width: 80%;
+        /* Takes up 80% of the screen width */
+    }
+
+    .container {
+        width: 100%;
+        /* Fits the parent main width */
+    }
+
+    form {
+        width: 100%;
+        /* Fits the parent main width */
+    }
+}
+
+/* Mobile Optimization (480px and below) */
+@media screen and (max-width: 480px) {
+    main {
+        width: 90%;
+        /* Uses more width on smaller screens */
+        height: auto;
+        /* Adjust height for content */
+        min-height: 370px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+        /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        /* Smaller heading */
+        text-align: center;
+    }
+
+    .container img {
+        height: 140px;
+        /* Smaller image */
+        width: 140px;
+    }
+
+    form {
+        width: 100%;
+        padding: 20px;
+        /* Ensure form is still viewable/interactive */
+    }
+
+    form input {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    /* Make the form easier to access on touch devices if hover is tricky, 
+       though hover still works on some taps. 
+       We could add :focus-within if requested, but sticking to layout responsiveness mainly. */
+
+    main:hover {
+        transform: none;
+    }
+}

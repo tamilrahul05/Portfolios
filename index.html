@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet" />
+
+  <title>Portfolio</title>
+</head>
+
+<body class="text-white bg-black">
+  <!-- Bootstrap Navbar -->
+  <nav
+    class="navbar navbar-expand-lg main-navbar top-5 md-top-10 start-50 translate-middle-x z-99 w-90 glass-effect px-3 px-md-4 py-2 ">
+    <div class=" position-relative w-100">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Brand (Mobile Only) -->
+        <a class="navbar-brand d-lg-none fw-bold fs-4 text-sky-400 mb-0" href="#home" style="letter-spacing: 0.05em;">
+          Port<span class="text-white">folio</span>
+        </a>
+
+        <!-- Bootstrap Toggler Button -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-white fs-3"></i>
+        </button>
+      </div>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto gap-2 gap-lg-4 text-center justify-content-center mb-lg-0 py-3 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-white hover-text-sky-400 active fs-5" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hover-text-sky-400 fs-5" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hover-text-sky-400 fs-5" href="#Skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hover-text-sky-400 fs-5" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hover-text-sky-400 fs-5" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white hover-text-sky-400 fs-5" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Social Icons (Mobile Only - Inside Collapse) -->
+        <div class="d-flex d-md-none d-lg-none justify-content-center align-items-center gap-4 pb-3">
+
+          <a href="https://www.linkedin.com/in/tamil-selvan-v-0b8b2629a" class="text-decoration-none text-white">
+            <i class="fa-brands fa-linkedin fs-1 hover-text-blue-500"></i></a>
+          </a>
+          <a href="https://github.com/tamilrahul05" class="text-decoration-none text-white">
+            <i class="fa-brands fa-github fs-3 hover-text-gray-300"></i>
+          </a>
+          <a href="https://www.facebook.com/share/1AL2m5LEgU/" class="text-decoration-none text-white">
+            <i class="fa-brands fa-facebook fs-3 hover-text-blue-500"></i>
+          </a>
+          <a href="https://www.instagram.com/i_am_tamil__ts__?igsh=N3htNjgwbDlwczA2"
+            class="text-decoration-none text-white">
+            <i class="fa-brands fa-instagram fs-3 hover-text-pink-400"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home page -->
+  <section id="home" class="position-relative overflow-auto w-100 bg-cover bg-center home-container p-2 pb-5  p-sm-0 ">
+    <!-- Social Icons (Visible only on desktop) -->
+    <div
+      class="iconsbar d-none d-md-none d-lg-flex  position-absolute z-3 top-50 start-0 translate-middle-y flex-column align-items-center gap-5 px-3 py-5 glass-effect">
+      <a href="https://www.linkedin.com/in/tamil-selvan-v-0b8b2629a" class="text-decoration-none text-white"><i
+          class="fa-brands fa-linkedin fs-1 hover-text-blue-500"></i></a>
+      <a href="https://github.com/tamilrahul05" class="text-decoration-none text-white"><i
+          class="fa-brands fa-github fs-1 hover-text-gray-500"></i></a>
+      <a href="https://www.facebook.com/share/1AL2m5LEgU/" class="text-decoration-none text-white"><i
+          class="fa-brands fa-facebook fs-1 hover-text-blue-500"></i></a>
+      <a href="https://www.instagram.com/i_am_tamil__ts__?igsh=N3htNjgwbDlwczA2"
+        class="text-decoration-none text-white"><i class="fa-brands fa-instagram fs-1 hover-text-pink-400"></i></a>
+
+    </div>
+
+    <!-- Hero Section -->
+    <div
+      class="hero position-relative z-1 d-flex flex-column justify-content-center align-items-center h-100 text-center px-2 px-md-4 mt-5 pt-5">
+      <h1 class="display-4 fw-bold mb-2" style="font-weight: 800; line-height: 1.2; font-size: clamp(2rem, 8vw, 6rem);">
+        HI, I'M <span class="text-sky-500">TAMIL SELVAN</span>
+      </h1>
+      <h2 class="h3 fw-bold mb-4 fs-1">FULL STACK DEVELOPER</h2>
+      <p class="text-secondary mx-auto fs-5 lh-base" style="max-width: 60rem;">
+        I'm a passionate Full Stack Developer skilled in building dynamic,
+        efficient, and scalable web applications. I love transforming creative
+        ideas into responsive user interfaces and powerful backend systems
+        using modern technologies like
+        <span class="text-sky-400 fw-medium">Java, React, Node.js</span>
+        and <span class="text-sky-400 fw-medium">Python</span>. My goal is
+        to create seamless digital experiences that connect innovation with
+        functionality.
+      </p>
+      <button
+        class="mt-4 btn bg-white text-black fw-semibold rounded-pill d-flex align-items-center gap-2 position-relative px-4 py-2 border-0">
+        Contact
+        <i class="fa-solid fa-paper-plane text-white position-absolute" style="right: -8px; top: -8px;"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Role showing section -->
+  <section id="roleshowing"
+    class="stock-ticker d-flex align-items-center py-2 py-md-5 mt-5 mt-md-2 user-select-none w-100 bg-black overflow-hidden">
+    <div class="d-flex" style="width: 200%; gap: 20rem;">
+      <div class="ticker-track w-100 d-flex gap-4 text-nowrap">
+        <h1 class="ticker-text d-flex align-items-center gap-5 justify-content-center px-4 py-2"
+          style="font-size: clamp(30px, 8vw, 80px);">
+          <span>I'M</span>
+
+          <span>WORK</span>
+          <span>FULL STACK</span>
+          <span>DEVELOPER</span>
+          <span>ROLE</span>
+        </h1>
+        <h1 class="ticker-text d-flex align-items-center gap-5 justify-content-center px-4 py-2"
+          style="font-size: clamp(30px, 8vw, 80px);">
+          <span>I'M</span>
+
+          <span>WORK</span>
+          <span>FULL STACK</span>
+          <span>DEVELOPER</span>
+          <span>ROLE</span>
+        </h1>
+      </div>
+      <div class="ticker-track w-100 d-flex gap-4 text-nowrap">
+        <h1 class="ticker-text d-flex align-items-center gap-5 justify-content-center px-4 py-2"
+          style="font-size: clamp(30px, 8vw, 80px);">
+          <span>I'M</span>
+
+          <span>WORK</span>
+          <span>FULL STACK</span>
+          <span>DEVELOPER</span>
+          <span>ROLE</span>
+        </h1>
+        <h1 class="ticker-text d-flex align-items-center gap-5 justify-content-center px-4 py-2"
+          style="font-size: clamp(30px, 8vw, 80px);">
+          <span>I'M</span>
+          <span>WORK</span>
+          <span>FULL STACK</span>
+          <span>DEVELOPER</span>
+          <span>ROLE</span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- About section -->
+
+  <section id="about"
+    class="d-flex flex-column bg-black align-items-center justify-content-center px-3 px-md-4 py-4 py-md-5 pb-5">
+    <div class="mt-4 mb-5 d-flex gap-4 align-items-center justify-content-center">
+      <h2 class="display-4 fw-light text-center">About us</h2>
+      <i class="fa-solid mt-3 fa-arrow-right fs-2" style="color: #ffffff"></i>
+    </div>
+
+    <!-- Main Content -->
+    <div
+      class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-4 gap-xl-5 mt-4 w-100 position-relative">
+      <!-- Decorative rotating circle shape under image -->
+      <div class="circle-container">
+        <div class="circle d-none d-md-block" style="height: 350px; width: 350px;"></div>
+      </div>
+
+      <!-- Profile Image -->
+      <img src="./rahul.jpg" alt="Profile"
+        class="object-fit-cover rounded border border-info position-relative z-10 w-60 h-60 md-w-70 md-h-100 xl-w-85 xl-h-100" />
+
+      <!-- Text Content -->
+      <div class="" style="max-width: 32rem;">
+        <h1 class="h2 fw-bold mb-3 text-center lh-sm">
+          I AM AVAILABLE FOR
+          <span class="text-info">FULL STACK DEVELOPER
+            <img class="d-inline" src="./hi.gif" alt="hiIcon" style="height: 60px; width: 60px;" /></span>
+        </h1>
+
+        <p class="text-gray-300 fs-5 lh-lg mb-4">
+          Hi, I'm
+          <span class="text-info fw-semibold">Tamil Selvan</span>, a
+          dedicated Full Stack Developer who loves building complete web
+          applications from front-end to back-end. I enjoy creating clean,
+          responsive, and efficient solutions using technologies like HTML,
+          CSS, JavaScript, React, Node.js, java and python.
+        </p>
+
+        <!-- Stats -->
+        <div class="d-flex gap-4">
+          <div class="bg-dark px-4 py-3 rounded text-center">
+            <h3 class="h2 fw-bold text-white">15+</h3>
+            <p class="small text-secondary mb-0">PROJECT COMPLETED</p>
+          </div>
+          <div class="bg-dark px-4 py-3 rounded text-center">
+            <h3 class="h2 fw-bold text-white">1+</h3>
+            <p class="small text-secondary mb-0">YEARS EXPERIENCES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill section -->
+  <section id="Skill" class="bg-black px-5 py-5 overflow-hidden">
+
+    <div class="mt-4 mb-5 d-flex gap-4 align-items-center justify-content-center">
+      <h2 class="display-4 fw-light text-center text-white">
+        Skill
+      </h2>
+      <i class="fa-solid mt-3 fa-arrow-right fs-2" style="color: #ffffff"></i>
+    </div>
+
+    <div class="skill-section-wrapper">
+      <!-- Radio Buttons (must be outside flex container but inside wrapper for CSS sibling selectors) -->
+      <input type="radio" name="skill-tab" id="skill-tab-1" checked>
+      <input type="radio" name="skill-tab" id="skill-tab-2">
+      <input type="radio" name="skill-tab" id="skill-tab-3">
+
+      <div class="d-flex flex-column flex-md-row align-items-start bg-black justify-content-center gap-md-5">
+        <!-- Left Column: Tabs and Skill Bars -->
+        <div class="css-tabs">
+          <label for="skill-tab-1" class="tab-label">FRONT-END</label>
+          <label for="skill-tab-2" class="tab-label">BACK-END</label>
+          <label for="skill-tab-3" class="tab-label">TOOLS</label>
+
+          <div class="skills-container">
+            <!-- FRONT-END Skills -->
+            <div class="skills-content content-1">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>90%</span>
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line"><span style="width: 90%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>85%</span>
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line"><span style="width: 85%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>70%</span>
+                  <span>JS</span>
+                </div>
+                <div class="progress-line"><span style="width: 70%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>95%</span>
+                  <span>React</span>
+                </div>
+                <div class="progress-line"><span style="width: 95%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>75%</span>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="progress-line"><span style="width: 75%"></span></div>
+              </div>
+            </div>
+
+            <!-- BACK-END Skills -->
+            <div class="skills-content content-2">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>80%</span>
+                  <span>Java</span>
+                </div>
+                <div class="progress-line"><span style="width: 80%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>70%</span>
+                  <span>Node.js</span>
+                </div>
+                <div class="progress-line"><span style="width: 70%"></span></div>
+              </div>
+
+            </div>
+
+            <!-- TOOLS Skills -->
+            <div class="skills-content content-3">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>80%</span>
+                  <span>Git</span>
+                </div>
+                <div class="progress-line"><span style="width: 80%"></span></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>70%</span>
+                  <span>Eclipse</span>
+                </div>
+                <div class="progress-line"><span style="width: 70%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Skill Descriptions -->
+        <div class="skill-descriptions text-gray-300">
+          <!-- FRONT-END Descriptions -->
+          <div class="desc-content desc-1">
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #f97316;"></span>
+                <h2 class="text-white fw-bold mb-0">HTML</h2>
+              </div>
+              <p class="mt-2 small">
+                I am a passionate developer who transforms creative ideas into fast, accessible digital experiences. I
+                focus
+                on clean UI/UX design, thoughtful interactions, and responsive layouts.
+              </p>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #a855f7;"></span>
+                <h2 class="text-white fw-bold mb-0">CSS</h2>
+              </div>
+              <p class="mt-2 small">
+                I love turning creative ideas into digital experiences that are fast, accessible and engaging. With a
+                strong
+                focus on UI/UX design, I craft clean interfaces, smooth interactions, and responsive layouts.
+              </p>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #eab308;"></span>
+                <h2 class="text-white fw-bold mb-0">JavaScript</h2>
+              </div>
+              <p class="mt-2 small">
+                I build interactive and dynamic web experiences using JavaScript. From DOM manipulation to modern ES6+
+                features, I create smooth animations and responsive user interfaces.
+              </p>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #06b6d4;"></span>
+                <h2 class="text-white fw-bold mb-0">React JS</h2>
+              </div>
+              <p class="mt-2 small">
+                I create visually appealing, user-friendly interfaces with React. Building reusable components and
+                managing state efficiently for seamless user experiences.
+              </p>
+            </div>
+          </div>
+
+          <!-- BACK-END Descriptions -->
+          <div class="desc-content desc-2">
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #f59e0b;"></span>
+                <h2 class="text-white fw-bold mb-0">Java</h2>
+              </div>
+              <p class="mt-2 small">
+                I build robust, scalable backend solutions using Java. With expertise in object-oriented programming, I
+                create efficient applications that handle complex logic, ensuring reliability and performance across
+                enterprise-level systems.
+              </p>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #22c55e;"></span>
+                <h2 class="text-white fw-bold mb-0">Node.js</h2>
+              </div>
+              <p class="mt-2 small">
+                I build scalable server-side applications using Node.js. Creating RESTful APIs, handling database
+                operations, and implementing efficient backend logic for modern web applications.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- TOOLS Descriptions -->
+          <div class="desc-content desc-3">
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #f97316;"></span>
+                <h2 class="text-white fw-bold mb-0">Git</h2>
+              </div>
+              <p class="mt-2 small">
+                I use Git for version control to manage code efficiently. Proficient in branching, merging, and
+                collaborative workflows using GitHub to maintain clean and organized codebases.
+              </p>
+            </div>
+            <div class="mb-4">
+              <div class="d-flex align-items-center gap-3">
+                <span class="rounded-circle" style="width: 32px; height: 32px; background-color: #a855f7;"></span>
+                <h2 class="text-white fw-bold mb-0">Eclipse</h2>
+              </div>
+              <p class="mt-2 small">
+                I use Eclipse for Java development. Creating efficient and maintainable code using its integrated
+                development environment (IDE) for building enterprise-level applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="PROJECT">
+    <div class="title" id="project">
+      <h1>Project <i class="fa-solid mt-3 fa-arrow-right fs-2" style="color: #ffffff"></i>
+    </div>
+    <div class="heading">
+      <h1>MASTER <span> PROJECT</span></h1>
+    </div>
+    <div class="image_box">
+      <!-- <input type="checkbox" for="nextpage"> -->
+      <div>
+        <input type="checkbox" id="click">
+        <img src="./1.png" alt="Project1">
+        <a href="task-118/task.html" id="nextpage"><img src="./1.png" alt=""></a>
+        <h3>Project <span>//1</span></h3>
+      </div>
+      <div>
+        <input type="checkbox" id="click">
+        <img src="./2.png" alt="Project2">
+        <a href="task-114/task.html" id="nextpage"><img src="./2.png" alt=""></a>
+        <h3>Project <span>//2</span></h3>
+      </div>
+      <div>
+        <input type="checkbox" id="click">
+        <img src="./4.png" alt="Project3">
+        <a href="task77-@media query task/task77.html" id="nextpage"><img src="./4.png" alt=""></a>
+        <h3>Project <span>//3</span></h3>
+      </div>
+      <div>
+        <input type="checkbox" id="click">
+        <img src="./3.png" alt="Project4">
+        <a href="task-115/task.html" id="nextpage"><img src="./3.png" alt=""></a>
+        <h3>Project <span>//4</span></h3>
+      </div>
+      <div>
+        <input type="checkbox" id="click">
+        <img src="./5.png" alt="Project5">
+        <a href="Task-113/task.html" id="nextpage"><img src="./5.png" alt=""></a>
+        <h3>Project <span>//5</span></h3>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Education section -->
+  <section id="education">
+
+    <div class="mt-4 mb-5 d-flex gap-4 align-items-center justify-content-center">
+      <h2 class="display-4 fw-bold text-center text-white">
+        Education
+      </h2>
+      <i class="fa-solid mt-3 fa-arrow-right fs-2" style="color: #ffffff"></i>
+    </div>
+    <div class="education-container">
+      <!-- 10th Card -->
+      <div class="Education-card-border">
+        <div class="Education-card">
+          <div class="card-shield">
+            <p class="card-description">
+              I completed my 10<sup>th</sup> standard at
+              <span class="text-info fw-semibold"> SRI V D S Jain Higher Secondary School</span>
+              with a score of
+              <span class="text-info fw-semibold">59%</span>.
+            </p>
+
+            <div class="circle-progress-wrapper">
+              <div class="circle-progress" data-progress="57">
+                <span class="circle-progress-text">59%</span>
+              </div>
+            </div>
+
+            <h2 class="card-title">10<sup>th</sup></h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12th Card -->
+      <div class="Education-card-border">
+        <div class="Education-card">
+          <div class="card-shield">
+            <p class="card-description">
+              I completed my 12<sup>th</sup> standard at
+              <span class="text-info fw-semibold"> SRI V D S Jain Higher Secondary School</span>
+              with a score of
+              <span class="text-info fw-semibold">77%</span>.
+            </p>
+
+            <div class="circle-progress-wrapper">
+              <div class="circle-progress" data-progress="65">
+                <span class="circle-progress-text">77%</span>
+              </div>
+            </div>
+
+            <h2 class="card-title">12<sup>th</sup></h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- College Card -->
+      <div class="Education-card-border">
+        <div class="Education-card">
+          <div class="card-shield">
+            <p class="card-description">
+              I completed my
+              <span class="text-info fw-semibold">B.Tech in IT</span> at
+              <span class="text-info fw-semibold">IFET College of Engineering</span>
+              with an average of
+              <span class="text-info fw-semibold">89%</span>.
+            </p>
+            <div class="circle-progress-wrapper">
+              <div class="circle-progress" data-progress="76">
+                <span class="circle-progress-text">89%</span>
+              </div>
+            </div>
+            <h2 class="card-title">College</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center fade-in p-4 mb-5">
+    <div class="mt-4 pb-5 d-flex gap-4 align-items-center justify-content-center"
+      style="margin-bottom: 9rem !important;">
+      <h2 class="display-4 fw-light text-center text-white fw-bold">
+        Contact
+      </h2>
+      <i class="fa-solid mt-3 fa-arrow-right fs-2" style="color: #ffffff"></i>
+    </div>
+
+    <div class="neon-border mx-auto p-4 rounded-4" style="max-width: 42rem;">
+      <h3 class="h2 fw-bold mb-3">Contact Me</h3>
+      <div class="text-secondary small mb-4">
+        <p class="text-secondary small mb-4">
+          I'm Tamil Selvan, a Full Stack Developer who enjoys building complete web applications using the MERN stack
+          and focus on creating fast, responsive, and user-friendly solutions from frontend to backend.
+        </p>
+      </div>
+
+      <form class="d-flex flex-column flex-sm-row gap-3 align-items-center justify-content-center">
+        <input type="email" placeholder="Email: xyz@gmail.com"
+          class="form-control w-100 bg-transparent border-secondary text-white shadow-none" style="color: white;" />
+        <input type="text" placeholder="Message"
+          class="form-control w-100 bg-transparent border-secondary text-white shadow-none" style="color: white;" />
+        <button type="submit" class="btn btn-info send-btn rounded d-flex align-items-center justify-content-center"
+          style="height: 40px; width: 48px;">
+          <i class="fa-solid fa-paper-plane pt-1" style="color: #ffffff;"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer
+    class="w-100 py-3 px-4 px-md-5 d-flex flex-wrap justify-content-center justify-content-md-between align-items-start gap-5 gap-md-0">
+
+
+    <div style="max-width: 24rem;">
+      <h2 class="h3 fw-bold mb-2">
+        Personal <span class="text-sky-400">Portfolio</span>
+      </h2>
+      <p class="text-gray-300 small lh-base mb-4">
+        I'm a passionate Full Stack Developer skilled in building modern, responsive, and
+        dynamic web applications using the MERN stack.
+      </p>
+      <img src="./hi_image.png" alt="Character" class="w-25">
+    </div>
+
+
+    <div>
+      <h3 class="h5 fw-semibold mb-3">Navigation</h3>
+      <ul class="list-unstyled d-flex flex-column gap-2 text-gray-300">
+        <li class="hover-translate"><i class="fa-solid fa-chevron-right small text-sky-400 me-2"></i> <a href="#home"
+            class="text-decoration-none text-reset">Home</a></li>
+        <li class="hover-translate"><i class="fa-solid fa-chevron-right small text-sky-400 me-2"></i> <a href="#about"
+            class="text-decoration-none text-reset">About</a></li>
+        <li class="hover-translate"><i class="fa-solid fa-chevron-right small text-sky-400 me-2"></i> <a href="#Skill"
+            class="text-decoration-none text-reset">Skill</a></li>
+        <li class="hover-translate"><i class="fa-solid fa-chevron-right small text-sky-400 me-2"></i> <a href="#project"
+            class="text-decoration-none text-reset">Project</a></li>
+        <li class="hover-translate"><i class="fa-solid fa-chevron-right small text-sky-400 me-2"></i> <a
+            href="#education" class="text-decoration-none text-reset">Education</a></li>
+        <li class="hover-translate"><i class="fa-solid fa-chevron-right small text-sky-400 me-2"></i> <a href="#contact"
+            class="text-decoration-none text-reset">Contact</a></li>
+      </ul>
+    </div>
+
+
+    <div>
+      <h3 class="h5 fw-semibold mb-3">Contact</h3>
+      <ul class="list-unstyled d-flex flex-column gap-3 text-gray-300">
+        <li class="socialicons hover-text-pink-400"><i class="fa-brands fa-linkedin text-sky-400 me-2"></i> <a
+            href="https://www.linkedin.com/in/tamil-selvan-v-0b8b2629a" class="a_text">Linked in</a>
+        </li>
+        <li class="socialicons hover-text-gray-600"><i class="fa-brands fa-github text-sky-400 me-2"></i> <a
+            href="https://github.com/tamilrahul05" class="a_text">Github</a></li>
+        <li class="socialicons hover-text-blue-500"><i class="fa-brands fa-facebook text-sky-400 me-2"></i> <a
+            href="https://www.facebook.com/share/1AL2m5LEgU/" class="a_text">Facebook</a>
+        </li>
+        <li class="socialicons hover-text-pink-400"><i class="fa-brands fa-instagram text-sky-400 me-2"></i> <a
+            href="https://www.instagram.com/i_am_tamil__ts__?igsh=N3htNjgwbDlwczA2" class="a_text">Instagram</a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <div class="align-self-end mb-4 me-4">
+      <a href="#home">
+        <button class="btn btn-dark rounded-circle p-3 shadow-lg animate-float border-0">
+          <i class="fa-solid fa-arrow-up text-white"></i>
+        </button>
+      </a>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
