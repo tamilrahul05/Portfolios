@@ -1124,7 +1124,8 @@ nav.main-navbar .nav-link:hover {
     opacity: 1;
 } */
 .PROJECT .image_box div img:hover {
-  transform: rotate(2deg) scale(0.97);
+  border: 2px solid;
+  transform: rotate(3deg) scale(0.97);
 }
 
 .PROJECT .image_box div:hover h3 {
@@ -1139,7 +1140,7 @@ nav.main-navbar .nav-link:hover {
   height: 350px;
   border-radius: 20px;
   transition: all;
-  /* background-color: transparent; */
+  border: 2px solid;
   position: absolute;
 }
 
